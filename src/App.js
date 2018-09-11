@@ -10,9 +10,9 @@ class App extends Component {
   }
 
   deleteCharHandler = ( index ) => {
-    const text = this.state.userInput.split('')
-    text.splice(index, 1)
-    const updatedText = text.join('');
+    const text = this.state.userInput.split('') //now you have an array of characters
+    text.splice(index, 1) //remove the character
+    const updatedText = text.join(''); //it becomes a string again
     this.setState({userInput: updatedText})
   }
 

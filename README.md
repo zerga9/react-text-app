@@ -1,4 +1,4 @@
-### React practice
+### React Text App
 
 * Create an input field (in App component) with a change listener which outputs the length of the entered text below it (e.g. in a paragraph)
 * Create a new component (=> ValidationComponent) which receives the text length as a prop
@@ -6,3 +6,7 @@
 * Create another component (=> CharComponent) and style it as an inline box
 * Render a list of CharComponents where each CharComponent receives a different letter of the entered text (in the initial input field) as a prop
 * When you click on a CharComponent, it should be removed from the entered text
+
+copy this repository
+run ``npm install`` in the terminal to install dependencies and then
+run ```npm start``` to see the app 
