@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Validation from './Validation/Validation';
 import Char from './Char/Char';
+import './App.css'
 class App extends Component {
   state = {
     userInput: ''
