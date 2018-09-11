@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 
 
 class App extends Component {
+  state = {
+    userInput: ''
+  }
+  inputChangedHandler = (event) => {
+    this.setState({userInput: event.target.value})
+  }
   render() {
     return (
       <div className="App">
@@ -13,6 +19,12 @@ class App extends Component {
           <li>Render a list of CharComponents where each CharComponent receives a different letter of the entered text (in the initial input field) as a prop</li>
           <li>When you click on a CharComponent, it should be removed from the entered text</li>
         </ol>
+        <hr />
+        <input
+          type="text"
+          onChange={this.inputChangedHandler}
+          value={this.state.userInput} />
+          <p>{this.state.userInput}</p>
       </div>
     );
   }
